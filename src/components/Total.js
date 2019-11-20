@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 const Total = props => {
   return (
     <div className="content">
-      <h4>Total Amount: ${props.carPrice + props.additionalPrice}</h4>
+      <h4>Total Amount: ${parseInt(props.carPrice) + parseInt(props.additionalPrice)}</h4>
     </div>
   );
 };
