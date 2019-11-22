@@ -33,7 +33,7 @@ export const initialState = {
                     car: {
                         ...state.car,
                         features:  state.car.features.filter((item) => {
-                            return item != action.payload
+                            return item !== action.payload
                     })
                 }
             
